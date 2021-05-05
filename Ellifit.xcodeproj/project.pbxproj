@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A88A0DA263E62DC00EEAF6E /* EllifitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88A0D9263E62DC00EEAF6E /* EllifitApp.swift */; };
+		0A88A0DC263E62DC00EEAF6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88A0DB263E62DC00EEAF6E /* ContentView.swift */; };
+		0A88A0DE263E62DD00EEAF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0DD263E62DD00EEAF6E /* Assets.xcassets */; };
+		0A88A0E1263E62DD00EEAF6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0E0263E62DD00EEAF6E /* Preview Assets.xcassets */; };
+		0AA34D4726428EE600C12462 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4626428EE600C12462 /* HomeView.swift */; };
+		0AA34D4926428F1100C12462 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4826428F1100C12462 /* LoginView.swift */; };
+		0AA34D4B26428F5700C12462 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */; };
+		0AFB20C3263E8C140067DCB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */; };
+		53B7B104F6BF92CC82B18A53 /* Pods_Ellifit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35843688400FE31D5572E039 /* Pods_Ellifit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A88A0D6263E62DC00EEAF6E /* Ellifit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ellifit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A88A0D9263E62DC00EEAF6E /* EllifitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllifitApp.swift; sourceTree = "<group>"; };
+		0A88A0DB263E62DC00EEAF6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A88A0DD263E62DD00EEAF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A88A0E0263E62DD00EEAF6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A88A0E2263E62DD00EEAF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA34D4626428EE600C12462 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0AA34D4826428F1100C12462 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35843688400FE31D5572E039 /* Pods_Ellifit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ellifit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellifit.release.xcconfig"; path = "Target Support Files/Pods-Ellifit/Pods-Ellifit.release.xcconfig"; sourceTree = "<group>"; };
+		DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellifit.debug.xcconfig"; path = "Target Support Files/Pods-Ellifit/Pods-Ellifit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A88A0D3263E62DC00EEAF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B7B104F6BF92CC82B18A53 /* Pods_Ellifit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A88A0CD263E62DC00EEAF6E = {
+			isa = PBXGroup;
+			children = (
+				0A88A0D8263E62DC00EEAF6E /* Ellifit */,
+				0A88A0D7263E62DC00EEAF6E /* Products */,
+				416BA54D0C6172E235F0F4C8 /* Pods */,
+				7FAB6B35344EE9B3DCAB77A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A88A0D7263E62DC00EEAF6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A88A0D6263E62DC00EEAF6E /* Ellifit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A88A0D8263E62DC00EEAF6E /* Ellifit */ = {
+			isa = PBXGroup;
+			children = (
+				0A88A0D9263E62DC00EEAF6E /* EllifitApp.swift */,
+				0AA34D4626428EE600C12462 /* HomeView.swift */,
+				0A88A0DB263E62DC00EEAF6E /* ContentView.swift */,
+				0AA34D4826428F1100C12462 /* LoginView.swift */,
+				0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */,
+				0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */,
+				0A88A0DD263E62DD00EEAF6E /* Assets.xcassets */,
+				0A88A0E2263E62DD00EEAF6E /* Info.plist */,
+				0A88A0DF263E62DD00EEAF6E /* Preview Content */,
+			);
+			path = Ellifit;
+			sourceTree = "<group>";
+		};
+		0A88A0DF263E62DD00EEAF6E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A88A0E0263E62DD00EEAF6E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		416BA54D0C6172E235F0F4C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */,
+				72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FAB6B35344EE9B3DCAB77A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35843688400FE31D5572E039 /* Pods_Ellifit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A88A0D5263E62DC00EEAF6E /* Ellifit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A88A0E5263E62DD00EEAF6E /* Build configuration list for PBXNativeTarget "Ellifit" */;
+			buildPhases = (
+				A061AF4CA240FE03B6EAF4EF /* [CP] Check Pods Manifest.lock */,
+				0A88A0D2263E62DC00EEAF6E /* Sources */,
+				0A88A0D3263E62DC00EEAF6E /* Frameworks */,
+				0A88A0D4263E62DC00EEAF6E /* Resources */,
+				8D72C44734EADF015D632D32 /* [CP] Embed Pods Frameworks */,
+				555EE4AB6ECC833422C05264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ellifit;
+			productName = Ellifit;
+			productReference = 0A88A0D6263E62DC00EEAF6E /* Ellifit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A88A0CE263E62DC00EEAF6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0A88A0D5263E62DC00EEAF6E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 0A88A0D1263E62DC00EEAF6E /* Build configuration list for PBXProject "Ellifit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A88A0CD263E62DC00EEAF6E;
+			productRefGroup = 0A88A0D7263E62DC00EEAF6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A88A0D5263E62DC00EEAF6E /* Ellifit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A88A0D4263E62DC00EEAF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A88A0E1263E62DD00EEAF6E /* Preview Assets.xcassets in Resources */,
+				0A88A0DE263E62DD00EEAF6E /* Assets.xcassets in Resources */,
+				0AFB20C3263E8C140067DCB4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		555EE4AB6ECC833422C05264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D72C44734EADF015D632D32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A061AF4CA240FE03B6EAF4EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ellifit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A88A0D2263E62DC00EEAF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA34D4726428EE600C12462 /* HomeView.swift in Sources */,
+				0AA34D4B26428F5700C12462 /* AuthenticationViewModel.swift in Sources */,
+				0A88A0DC263E62DC00EEAF6E /* ContentView.swift in Sources */,
+				0AA34D4926428F1100C12462 /* LoginView.swift in Sources */,
+				0A88A0DA263E62DC00EEAF6E /* EllifitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A88A0E3263E62DD00EEAF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A88A0E4263E62DD00EEAF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A88A0E6263E62DD00EEAF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ellifit/Preview Content\"";
+				DEVELOPMENT_TEAM = YQZQG7N4WG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ellifit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudrankriyam.Ellifit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A88A0E7263E62DD00EEAF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ellifit/Preview Content\"";
+				DEVELOPMENT_TEAM = YQZQG7N4WG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ellifit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudrankriyam.Ellifit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A88A0D1263E62DC00EEAF6E /* Build configuration list for PBXProject "Ellifit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A88A0E3263E62DD00EEAF6E /* Debug */,
+				0A88A0E4263E62DD00EEAF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A88A0E5263E62DD00EEAF6E /* Build configuration list for PBXNativeTarget "Ellifit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A88A0E6263E62DD00EEAF6E /* Debug */,
+				0A88A0E7263E62DD00EEAF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A88A0CE263E62DC00EEAF6E /* Project object */;
+}
