@@ -1,2 +1,3 @@
-# Ellifit-
-Example project for Google Sign-In &amp; Firebase Authentication Using SwiftUI
+# Ellifit
+
+This repository contains the final example project for [Google Sign-In & Firebase Authentication Using SwiftUI](https://blog.codemagic.io/google-sign-in-firebase-authentication-using-swift/)
