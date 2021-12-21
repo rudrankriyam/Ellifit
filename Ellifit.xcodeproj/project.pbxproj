@@ -17,6 +17,7 @@
 		0AFA49762771F1C600678C18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA49752771F1C600678C18 /* GoogleService-Info.plist */; };
 		0AFA49792771F52100678C18 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFA49782771F52100678C18 /* FirebaseAuth */; };
 		0AFA497C2771F55D00678C18 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFA497B2771F55D00678C18 /* GoogleSignIn */; };
+		0AFA497E277205DD00678C18 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA497D277205DD00678C18 /* GoogleSignInButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0AA34D4826428F1100C12462 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		0AFA49752771F1C600678C18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AFA497D277205DD00678C18 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				0AA34D4626428EE600C12462 /* HomeView.swift */,
 				0A88A0DB263E62DC00EEAF6E /* ContentView.swift */,
 				0AA34D4826428F1100C12462 /* LoginView.swift */,
+				0AFA497D277205DD00678C18 /* GoogleSignInButton.swift */,
 				0AFA49752771F1C600678C18 /* GoogleService-Info.plist */,
 				0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */,
 				0A88A0DD263E62DD00EEAF6E /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				0AA34D4B26428F5700C12462 /* AuthenticationViewModel.swift in Sources */,
 				0A88A0DC263E62DC00EEAF6E /* ContentView.swift in Sources */,
 				0AA34D4926428F1100C12462 /* LoginView.swift in Sources */,
+				0AFA497E277205DD00678C18 /* GoogleSignInButton.swift in Sources */,
 				0A88A0DA263E62DC00EEAF6E /* EllifitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
