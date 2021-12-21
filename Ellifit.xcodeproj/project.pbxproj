@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,9 @@
 		0AA34D4726428EE600C12462 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4626428EE600C12462 /* HomeView.swift */; };
 		0AA34D4926428F1100C12462 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4826428F1100C12462 /* LoginView.swift */; };
 		0AA34D4B26428F5700C12462 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */; };
-		0AFB20C3263E8C140067DCB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */; };
-		53B7B104F6BF92CC82B18A53 /* Pods_Ellifit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35843688400FE31D5572E039 /* Pods_Ellifit.framework */; };
+		0AFA49762771F1C600678C18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA49752771F1C600678C18 /* GoogleService-Info.plist */; };
+		0AFA49792771F52100678C18 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFA49782771F52100678C18 /* FirebaseAuth */; };
+		0AFA497C2771F55D00678C18 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFA497B2771F55D00678C18 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,7 @@
 		0AA34D4626428EE600C12462 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0AA34D4826428F1100C12462 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		35843688400FE31D5572E039 /* Pods_Ellifit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ellifit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellifit.release.xcconfig"; path = "Target Support Files/Pods-Ellifit/Pods-Ellifit.release.xcconfig"; sourceTree = "<group>"; };
-		DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellifit.debug.xcconfig"; path = "Target Support Files/Pods-Ellifit/Pods-Ellifit.debug.xcconfig"; sourceTree = "<group>"; };
+		0AFA49752771F1C600678C18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B7B104F6BF92CC82B18A53 /* Pods_Ellifit.framework in Frameworks */,
+				0AFA49792771F52100678C18 /* FirebaseAuth in Frameworks */,
+				0AFA497C2771F55D00678C18 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +50,6 @@
 			children = (
 				0A88A0D8263E62DC00EEAF6E /* Ellifit */,
 				0A88A0D7263E62DC00EEAF6E /* Products */,
-				416BA54D0C6172E235F0F4C8 /* Pods */,
-				7FAB6B35344EE9B3DCAB77A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +68,8 @@
 				0AA34D4626428EE600C12462 /* HomeView.swift */,
 				0A88A0DB263E62DC00EEAF6E /* ContentView.swift */,
 				0AA34D4826428F1100C12462 /* LoginView.swift */,
+				0AFA49752771F1C600678C18 /* GoogleService-Info.plist */,
 				0AA34D4A26428F5700C12462 /* AuthenticationViewModel.swift */,
-				0AFB20C2263E8C140067DCB4 /* GoogleService-Info.plist */,
 				0A88A0DD263E62DD00EEAF6E /* Assets.xcassets */,
 				0A88A0E2263E62DD00EEAF6E /* Info.plist */,
 				0A88A0DF263E62DD00EEAF6E /* Preview Content */,
@@ -88,23 +85,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		416BA54D0C6172E235F0F4C8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */,
-				72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7FAB6B35344EE9B3DCAB77A0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35843688400FE31D5572E039 /* Pods_Ellifit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,18 +92,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A88A0E5263E62DD00EEAF6E /* Build configuration list for PBXNativeTarget "Ellifit" */;
 			buildPhases = (
-				A061AF4CA240FE03B6EAF4EF /* [CP] Check Pods Manifest.lock */,
 				0A88A0D2263E62DC00EEAF6E /* Sources */,
 				0A88A0D3263E62DC00EEAF6E /* Frameworks */,
 				0A88A0D4263E62DC00EEAF6E /* Resources */,
-				8D72C44734EADF015D632D32 /* [CP] Embed Pods Frameworks */,
-				555EE4AB6ECC833422C05264 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Ellifit;
+			packageProductDependencies = (
+				0AFA49782771F52100678C18 /* FirebaseAuth */,
+				0AFA497B2771F55D00678C18 /* GoogleSignIn */,
+			);
 			productName = Ellifit;
 			productReference = 0A88A0D6263E62DC00EEAF6E /* Ellifit.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +132,10 @@
 				Base,
 			);
 			mainGroup = 0A88A0CD263E62DC00EEAF6E;
+			packageReferences = (
+				0AFA49772771F52100678C18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0AFA497A2771F55D00678C18 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 0A88A0D7263E62DC00EEAF6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,70 +152,11 @@
 			files = (
 				0A88A0E1263E62DD00EEAF6E /* Preview Assets.xcassets in Resources */,
 				0A88A0DE263E62DD00EEAF6E /* Assets.xcassets in Resources */,
-				0AFB20C3263E8C140067DCB4 /* GoogleService-Info.plist in Resources */,
+				0AFA49762771F1C600678C18 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		555EE4AB6ECC833422C05264 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D72C44734EADF015D632D32 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ellifit/Pods-Ellifit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A061AF4CA240FE03B6EAF4EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ellifit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A88A0D2263E62DC00EEAF6E /* Sources */ = {
@@ -299,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -366,7 +292,6 @@
 		};
 		0A88A0E6263E62DD00EEAF6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEF54D951620C0B67687F062 /* Pods-Ellifit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,7 +314,6 @@
 		};
 		0A88A0E7263E62DD00EEAF6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72D6D87A880C53B1CD87319D /* Pods-Ellifit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,6 +356,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AFA49772771F52100678C18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0AFA497A2771F55D00678C18 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AFA49782771F52100678C18 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AFA49772771F52100678C18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0AFA497B2771F55D00678C18 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AFA497A2771F55D00678C18 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A88A0CE263E62DC00EEAF6E /* Project object */;
 }

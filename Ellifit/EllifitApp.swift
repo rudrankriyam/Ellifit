@@ -28,6 +28,5 @@ struct EllifitApp: App {
 extension EllifitApp {
     private func setupAuthentication() {
         FirebaseApp.configure()
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
     }
 }

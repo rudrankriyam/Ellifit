@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.504813312209-g5esm56m803bu5pul4elq9bp4abqgr2h</string>
+				<string>REVERSED_CLIENT_ID</string>
 			</array>
 		</dict>
 	</array>
