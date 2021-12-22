@@ -2,6 +2,8 @@ workflows:
     ios-workflow:
       name: iOS Workflow
       environment:
+        groups:
+          - firebase
         vars:
           XCODE_PROJECT: "Ellifit.xcodeproj"
           XCODE_SCHEME: "Ellifit"
