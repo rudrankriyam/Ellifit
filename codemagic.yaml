@@ -3,7 +3,7 @@ workflows:
       name: iOS Workflow
       environment:
         vars:
-          XCODE_WORKSPACE: "Ellifit.xcodeproj"
+          XCODE_PROJECT: "Ellifit.xcodeproj"
           XCODE_SCHEME: "Ellifit"
           BUNDLE_ID: "com.rudrankriyam.Ellifit"
         xcode: latest
