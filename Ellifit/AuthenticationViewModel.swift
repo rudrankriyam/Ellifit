@@ -25,19 +25,23 @@ class AuthenticationViewModel: ObservableObject {
       }
     } else {
       // 2
-      guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+//      guard let clientID = FirebaseApp.app()?.options.clientID else { return }
       
       // 3
-      let configuration = GIDConfiguration(clientID: clientID)
+//      let configuration = GIDConfiguration(clientID: clientID)
       
       // 4
       guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
       guard let rootViewController = windowScene.windows.first?.rootViewController else { return }
       
       // 5
-      GIDSignIn.sharedInstance.signIn(with: configuration, presenting: rootViewController) { [unowned self] user, error in
-        authenticateUser(for: user, with: error)
-      }
+//      GIDSignIn.sharedInstance.signIn(with: configuration, presenting: rootViewController) { [unowned self] user, error in
+//        authenticateUser(for: user, with: error)
+//      }
+        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { [unowned self] signInResult, error in
+//            self.authenticateUser(for: user, with: error)
+            self.authenticateUser(for: signInResult?.user, with: error)
+        }
     }
   }
   
@@ -49,10 +53,14 @@ class AuthenticationViewModel: ObservableObject {
     }
     
     // 2
-    guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
+//    guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
+//
+//    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
     
-    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
-    
+      guard let idToken = user!.idToken?.tokenString else { return  };
+      let accessToken = user!.accessToken.tokenString;
+       let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+
     // 3
     Auth.auth().signIn(with: credential) { [unowned self] (_, error) in
       if let error = error {

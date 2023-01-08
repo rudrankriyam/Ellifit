@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>REVERSE_CLIEND_ID</string>
+				<string>com.googleusercontent.apps.964220286677-caj2clm848uhce7v7cho55p1g2e53bt1</string>
 			</array>
 		</dict>
 	</array>
@@ -57,5 +57,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>GIDClientID</key>
+	<string>964220286677-caj2clm848uhce7v7cho55p1g2e53bt1.apps.googleusercontent.com</string>
 </dict>
 </plist>
