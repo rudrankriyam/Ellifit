@@ -7,7 +7,9 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 import GoogleSignIn
+import UIKit
 
 class AuthenticationViewModel: ObservableObject {
   enum SignInState {
@@ -28,15 +30,15 @@ class AuthenticationViewModel: ObservableObject {
       guard let clientID = FirebaseApp.app()?.options.clientID else { return }
       
       // 3
-      let configuration = GIDConfiguration(clientID: clientID)
+      GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
       
       // 4
       guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
       guard let rootViewController = windowScene.windows.first?.rootViewController else { return }
       
       // 5
-      GIDSignIn.sharedInstance.signIn(with: configuration, presenting: rootViewController) { [unowned self] user, error in
-        authenticateUser(for: user, with: error)
+      GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { [unowned self] signInResult, error in
+        authenticateUser(for: signInResult?.user, with: error)
       }
     }
   }
@@ -49,9 +51,12 @@ class AuthenticationViewModel: ObservableObject {
     }
     
     // 2
-    guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
+    guard
+      let user,
+      let idToken = user.idToken?.tokenString
+    else { return }
     
-    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
     
     // 3
     Auth.auth().signIn(with: credential) { [unowned self] (_, error) in
